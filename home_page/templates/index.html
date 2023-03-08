@@ -1,0 +1,20 @@
+{% extends 'header.html' %}
+
+{% block containt %}
+<div class="col-lg-8">
+  <div class="row mx-auto">
+    {% for p in p_data %}
+    <div class="col-lg-4 mx-auto text-center mb-2">
+      <div class="m-1 border">
+        <img src="{{p.product_image.url}}" class="card-img-top p-1" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{p.product_name}}</h5>
+          <p class="card-text">Rs.{{p.product_price}} &nbsp; {{p.product_category}}</p>
+          <a href="#" class="btn btn-primary">But now</a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock containt %}
