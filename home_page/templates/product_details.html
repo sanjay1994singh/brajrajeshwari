@@ -1,0 +1,25 @@
+{% extends 'header.html' %}
+
+{% block containt %}
+<div class="col-lg-8">
+    <div class="row d-flex">
+        <div class="col-lg-6 border mx-auto mb-3">
+            <h3 class="text-center mb-4 bg-secondary text-light p-1 rounded">Product image</h3>
+            <img src="{{p_data.product_image.url}}" class="img-fluid" alt="...">
+        </div>
+        <div class="col-lg-6 border mx-auto mb-3">
+            <h3 class="text-center mb-4 bg-secondary text-light p-1 rounded">Product details</h3>
+            <h5 class="card-title">{{p_data.product_name}}</h5>
+            <label for="" class="text-danger">Description</label>
+            <p>{{p_data.product_description}}</p>
+            <p class="card-text">Rs.{{p_data.product_price}} &nbsp; {{p_data.product_category}}</p>
+            
+            <a href="#" class="btn btn-primary btn-sm w-100">Buy now</a>
+        </div>
+        <div class="col-lg-12">
+            <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam aut placeat cumque error nemo, quae natus obcaecati exercitationem quam aliquid explicabo ex praesentium vitae velit dolorum dolor! Cupiditate consectetur, illo et molestiae ipsam delectus ipsum. Eaque ex minima recusandae maiores. Commodi eum, sit iusto corporis consectetur ad et tempore in hic unde fugit corrupti est nam odio necessitatibus vel nostrum! Eos, sint voluptatibus quisquam consequuntur commodi quod nemo dolorem blanditiis possimus recusandae, deserunt quia tenetur ullam inventore! Officiis, enim ratione repudiandae eveniet, sapiente saepe sint rem neque, obcaecati exercitationem animi porro? Fugit laudantium autem nam. Facere nostrum perferendis, delectus voluptatibus eveniet, ipsam quasi magni minus distinctio porro provident illo doloribus excepturi cumque inventore laborum tempora doloremque iusto nobis numquam maxime corporis reprehenderit, libero deserunt. Accusamus, tempore? Odit excepturi, ullam, doloremque dolor maiores quibusdam quaerat labore illum assumenda rem magni vel nostrum minus, autem nisi consequuntur. Adipisci sunt rem soluta illo dolorum asperiores non atque reiciendis? Facilis nostrum hic nemo sequi quia. Quos eveniet quae, harum qui incidunt rem velit pariatur at dolore sunt distinctio ea illum aliquid, numquam non veniam, explicabo reprehenderit tempore doloribus minus cumque ducimus voluptates voluptatum. Numquam quas, odit recusandae optio explicabo accusantium illo quasi nobis voluptatibus?</p> -->
+        </div>        
+    </div>
+</div>
+
+{% endblock containt %}
